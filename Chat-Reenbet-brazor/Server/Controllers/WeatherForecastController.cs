@@ -1,4 +1,4 @@
-﻿using Chat_Reenbet_brazor.Shared;
+﻿using Chat_Reenbet_brazor.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;

@@ -1,0 +1,12 @@
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\Chat-Reenbet-brazor.DB.deps.json
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\Chat-Reenbet-brazor.DB.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\ref\Chat-Reenbet-brazor.DB.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\Chat-Reenbet-brazor.DB.pdb
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.csproj.AssemblyReference.cache
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.AssemblyInfoInputs.cache
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.AssemblyInfo.cs
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.csproj.CoreCompileInputs.cache
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\ref\Chat-Reenbet-brazor.DB.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.pdb

@@ -32,9 +32,7 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Micr
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Microsoft.JSInterop.WebAssembly.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\System.IO.Pipelines.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.Client.dll
-D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.Shared.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.Client.pdb
-D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.Shared.pdb
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\obj\Debug\net5.0\Chat-Reenbet-brazor.Server.csproj.AssemblyReference.cache
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\obj\Debug\net5.0\Chat-Reenbet-brazor.Server.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\obj\Debug\net5.0\Chat-Reenbet-brazor.Server.AssemblyInfoInputs.cache
@@ -58,3 +56,7 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\obj\Debug\net5.0\Chat
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\obj\Debug\net5.0\ref\Chat-Reenbet-brazor.Server.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\obj\Debug\net5.0\Chat-Reenbet-brazor.Server.pdb
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\obj\Debug\net5.0\Chat-Reenbet-brazor.Server.genruntimeconfig.cache
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.Models.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.Models.pdb
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.DB.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Server\bin\Debug\net5.0\Chat-Reenbet-brazor.DB.pdb

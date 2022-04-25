@@ -201,7 +201,6 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwr
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_EFIGS.dat.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_no_CJK.dat.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.5.0.13.js.gz
-D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Chat-Reenbet-brazor.Shared.dll.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Components.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.dll
@@ -397,8 +396,6 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwr
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_EFIGS.dat
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\icudt_no_CJK.dat
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\dotnet.5.0.13.js
-D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Chat-Reenbet-brazor.Shared.dll
-D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Chat-Reenbet-brazor.Shared.pdb
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Chat-Reenbet-brazor.Client.csproj.AssemblyReference.cache
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Chat-Reenbet-brazor.Client.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Chat-Reenbet-brazor.Client.AssemblyInfoInputs.cache
@@ -622,7 +619,6 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\buil
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\d0xJISgJ.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\9pMvXivh.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\zqQkt+EC.gz
-D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\1do+If7I.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\scopedcss\bundle\Chat-Reenbet-brazor.Client.styles.css
@@ -634,3 +630,7 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Chat
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Chat-Reenbet-brazor.Client.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\ref\Chat-Reenbet-brazor.Client.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Chat-Reenbet-brazor.Client.pdb
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Chat-Reenbet-brazor.Models.dll.gz
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Chat-Reenbet-brazor.Models.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\_framework\Chat-Reenbet-brazor.Models.pdb
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\70bOZoKn.gz

@@ -34,7 +34,8 @@
       "Chat-Reenbet-brazor.Server/1.0.0": {
         "dependencies": {
           "Chat-Reenbet-brazor.Client": "1.0.0",
-          "Chat-Reenbet-brazor.Shared": "1.0.0",
+          "Chat-Reenbet-brazor.DB": "1.0.0",
+          "Chat-Reenbet-brazor.Models": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "5.0.13",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -539,7 +540,7 @@
       "System.Net.Http.Json/5.0.0": {},
       "Chat-Reenbet-brazor.Client/1.0.0": {
         "dependencies": {
-          "Chat-Reenbet-brazor.Shared": "1.0.0",
+          "Chat-Reenbet-brazor.Models": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.13",
           "System.Net.Http.Json": "5.0.0"
         },
@@ -550,12 +551,20 @@
           "Chat-Reenbet-brazor.Client.dll": {}
         }
       },
-      "Chat-Reenbet-brazor.Shared/1.0.0": {
+      "Chat-Reenbet-brazor.DB/1.0.0": {
         "runtime": {
-          "Chat-Reenbet-brazor.Shared.dll": {}
+          "Chat-Reenbet-brazor.DB.dll": {}
         },
         "compile": {
-          "Chat-Reenbet-brazor.Shared.dll": {}
+          "Chat-Reenbet-brazor.DB.dll": {}
+        }
+      },
+      "Chat-Reenbet-brazor.Models/1.0.0": {
+        "runtime": {
+          "Chat-Reenbet-brazor.Models.dll": {}
+        },
+        "compile": {
+          "Chat-Reenbet-brazor.Models.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2403,7 +2412,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Chat-Reenbet-brazor.Shared/1.0.0": {
+    "Chat-Reenbet-brazor.DB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Chat-Reenbet-brazor.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

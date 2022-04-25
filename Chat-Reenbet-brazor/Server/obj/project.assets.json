@@ -319,7 +319,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Chat-Reenbet-brazor.Shared": "1.0.0",
+          "Chat-Reenbet-brazor.Models": "1.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.13",
           "System.Net.Http.Json": "5.0.0"
         },
@@ -330,14 +330,24 @@
           "bin/placeholder/Chat-Reenbet-brazor.Client.dll": {}
         }
       },
-      "Chat-Reenbet-brazor.Shared/1.0.0": {
+      "Chat-Reenbet-brazor.DB/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/Chat-Reenbet-brazor.Shared.dll": {}
+          "bin/placeholder/Chat-Reenbet-brazor.DB.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Chat-Reenbet-brazor.Shared.dll": {}
+          "bin/placeholder/Chat-Reenbet-brazor.DB.dll": {}
+        }
+      },
+      "Chat-Reenbet-brazor.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Chat-Reenbet-brazor.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Chat-Reenbet-brazor.Models.dll": {}
         }
       }
     }
@@ -860,16 +870,22 @@
       "path": "../Client/Chat-Reenbet-brazor.Client.csproj",
       "msbuildProject": "../Client/Chat-Reenbet-brazor.Client.csproj"
     },
-    "Chat-Reenbet-brazor.Shared/1.0.0": {
+    "Chat-Reenbet-brazor.DB/1.0.0": {
       "type": "project",
-      "path": "../Shared/Chat-Reenbet-brazor.Shared.csproj",
-      "msbuildProject": "../Shared/Chat-Reenbet-brazor.Shared.csproj"
+      "path": "../Database/Chat-Reenbet-brazor.DB.csproj",
+      "msbuildProject": "../Database/Chat-Reenbet-brazor.DB.csproj"
+    },
+    "Chat-Reenbet-brazor.Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Chat-Reenbet-brazor.Models.csproj",
+      "msbuildProject": "../Models/Chat-Reenbet-brazor.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Chat-Reenbet-brazor.Client >= 1.0.0",
-      "Chat-Reenbet-brazor.Shared >= 1.0.0",
+      "Chat-Reenbet-brazor.DB >= 1.0.0",
+      "Chat-Reenbet-brazor.Models >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 5.0.13"
     ]
   },
@@ -903,8 +919,11 @@
             "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Client\\Chat-Reenbet-brazor.Client.csproj": {
               "projectPath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Client\\Chat-Reenbet-brazor.Client.csproj"
             },
-            "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Shared\\Chat-Reenbet-brazor.Shared.csproj": {
-              "projectPath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Shared\\Chat-Reenbet-brazor.Shared.csproj"
+            "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Database\\Chat-Reenbet-brazor.DB.csproj": {
+              "projectPath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Database\\Chat-Reenbet-brazor.DB.csproj"
+            },
+            "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj": {
+              "projectPath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj"
             }
           }
         }

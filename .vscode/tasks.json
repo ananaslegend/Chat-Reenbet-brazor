@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Chat-Reenbet-brazor/Server/Chat-Reenbet-brazor.Server.csproj",
+                "${workspaceFolder}/Chat-Reenbet-brazor/Server/Chat-Reenbet-brazor.Server.csproj", 
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],

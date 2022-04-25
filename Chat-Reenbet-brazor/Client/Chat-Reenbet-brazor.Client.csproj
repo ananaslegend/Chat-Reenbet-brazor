@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Shared\Chat-Reenbet-brazor.Shared.csproj" />
+    <ProjectReference Include="..\Models\Chat-Reenbet-brazor.Models.csproj" />
   </ItemGroup>
 
 </Project>

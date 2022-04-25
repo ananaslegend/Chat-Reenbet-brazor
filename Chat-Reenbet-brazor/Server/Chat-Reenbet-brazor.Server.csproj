@@ -12,7 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Client\Chat-Reenbet-brazor.Client.csproj" />
-    <ProjectReference Include="..\Shared\Chat-Reenbet-brazor.Shared.csproj" />
+    <ProjectReference Include="..\Models\Chat-Reenbet-brazor.Models.csproj" />
+    <ProjectReference Include="..\Database\Chat-Reenbet-brazor.DB.csproj" />
   </ItemGroup>
 
 
