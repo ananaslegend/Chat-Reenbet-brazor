@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj": {}
+    "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj": {}
   },
   "projects": {
-    "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj": {
+    "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj",
+        "projectUniqueName": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj",
         "projectName": "Chat-Reenbet-brazor.Models",
-        "projectPath": "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj",
+        "projectPath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\Chat-Reenbet-brazor.Models.csproj",
         "packagesPath": "C:\\Users\\myfal\\.nuget\\packages\\",
-        "outputPath": "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\obj\\",
+        "outputPath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\myfal\\AppData\\Roaming\\NuGet\\NuGet.Config",

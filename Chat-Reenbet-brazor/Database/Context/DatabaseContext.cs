@@ -4,25 +4,23 @@ using Chat_Reenbet_brazor.Models;
 
 namespace Chat_Reenbet_brazor.DB.Context
 {
-    public class DatabaseContext : IdentityDbContext<User>
+    public class ApplicationContext : IdentityDbContext<User>
     {
+        public DbSet<Chat> Chats { get; set; }
+        public DbSet<Massage> Massages { get; set; }
+        public ApplicationContext(DbContextOptions<ApplicationContext> options): base(options) { }
 
-        
+        // public ApplicationContext() { }
 
-        public DatabaseContext(DbContextOptions<DatabaseContext> options): base(options)
-        {
-            
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
              
-        }
+        // }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        // protected override void OnModelCreating(ModelBuilder modelBuilder)
+        // {
             
-        }
+        // }
         
     }
 }

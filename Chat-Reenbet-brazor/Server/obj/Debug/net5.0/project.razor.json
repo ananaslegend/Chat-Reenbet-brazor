@@ -3927,188 +3927,6 @@
         }
       },
       {
-        "HashCode": 1637749216,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": 1476842135,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Chat_Reenbet_brazor.Client.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 586642054,
-        "Kind": "Components.ChildContent",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": 1293705307,
-        "Kind": "Components.ChildContent",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "Chat_Reenbet_brazor.Client.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -77527123,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.NavMenu",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": 987094677,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.NavMenu",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Chat_Reenbet_brazor.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1447181361,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 618203830,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 971476091,
         "Kind": "Components.Component",
         "Name": "Chat_Reenbet_brazor.Client.Pages.FetchData",
@@ -4237,6 +4055,188 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Chat_Reenbet_brazor.Client.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -77527123,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.NavMenu",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": 987094677,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.NavMenu",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Chat_Reenbet_brazor.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1447181361,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 618203830,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1637749216,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": 1476842135,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Chat_Reenbet_brazor.Client.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 586642054,
+        "Kind": "Components.ChildContent",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1293705307,
+        "Kind": "Components.ChildContent",
+        "Name": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "Chat_Reenbet_brazor.Client.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

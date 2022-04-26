@@ -10,3 +10,9 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Ch
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\ref\Chat-Reenbet-brazor.DB.dll
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.pdb
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\Chat-Reenbet-brazor.DB.runtimeconfig.json
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\Chat-Reenbet-brazor.DB.runtimeconfig.dev.json
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\Chat-Reenbet-brazor.Models.dll
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\bin\Debug\net5.0\Chat-Reenbet-brazor.Models.pdb
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.csproj.CopyComplete
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Database\obj\Debug\net5.0\Chat-Reenbet-brazor.DB.genruntimeconfig.cache

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P5lPKRHlnG7bdlvkVoBPFEzrXHHGZHW7166XVq7Tsbblmt7M+szGNCGe6xTIkYqmvNaPN6CXtEoXS5YR3LNnJw==",
+  "dgSpecHash": "n0EMOJfFpfoeqkkYWMNy4e3UMZNYJsBWCtQxKiad8MWhXOjxFXt/oa1lj6N94d98t6HkQ4Jr5vp5N7bnDktbNQ==",
   "success": true,
-  "projectFilePath": "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Client\\Chat-Reenbet-brazor.Client.csproj",
+  "projectFilePath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Client\\Chat-Reenbet-brazor.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.13\\microsoft.aspnetcore.authorization.5.0.13.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.13\\microsoft.aspnetcore.components.5.0.13.nupkg.sha512",

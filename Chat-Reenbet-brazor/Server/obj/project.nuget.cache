@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PZrGzahfU83AX+rxY+UByi1LHPu9tENL1BVHaNvayk2NiwAIbjyHQSgT7f/GEnKMsB6kgF2+5KnEmf9ZjkPLmA==",
+  "dgSpecHash": "bvuGLH/Cg3lpmmLHj3l0CEcWtDFqEtvxGx+X/TTr7bZE8J2g+WycPAH+a6w7xiFtXpsoRbTVXF+1s+Y1m3h7FA==",
   "success": true,
-  "projectFilePath": "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Server\\Chat-Reenbet-brazor.Server.csproj",
+  "projectFilePath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Server\\Chat-Reenbet-brazor.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\myfal\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.13\\microsoft.aspnetcore.authorization.5.0.13.nupkg.sha512",
