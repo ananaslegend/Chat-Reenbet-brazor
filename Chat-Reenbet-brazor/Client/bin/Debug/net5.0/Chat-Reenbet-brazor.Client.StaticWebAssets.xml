@@ -1,4 +1,5 @@
 ﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="C:\Users\myfal\.nuget\packages\microsoft.aspnetcore.components.webassembly.authentication\5.0.0\build\..\staticwebassets\" />
   <ContentRoot BasePath="/" Path="D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\bin\Debug\net5.0\wwwroot\" />
   <ContentRoot BasePath="/" Path="D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\scopedcss\bundle\" />
 </StaticWebAssets>

@@ -7,11 +7,14 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-mfUPOnPJdVlqx5sfEyjLXvZojwvosT7IdwftBM2ekfA=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-v2n7Q6PfIiAvv9anCBl0llzwtdxr0iCZZar3ne8Bxds=",
       "Microsoft.AspNetCore.Components.dll": "sha256-jAjgCR5HlevP6ZX6aOgY1nmSw3my7LJ2d\/2r+K38zn4=",
+      "Microsoft.AspNetCore.Components.Authorization.dll": "sha256-RETzcaqJB7uXmSqtgbNeKNNc5YC\/Ux+Ud\/XI\/\/VCR38=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-YWF2OnontxkaiFcJmOM7wWFQhyWAPkjF+dSyH0okqQE=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-wlznzoSBsthuKCVsTw7oKRamVbfJHFwP2yiYvSE6Ms4=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-QsNziIE1fqEkctuuGPf+3m0MbOtwlF2DwxTJZ4daFFc=",
+      "Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": "sha256-TzJ8yXiAFdeuIRugRMsc6NiMKp6LDXSNjQLcXEklJZQ=",
       "Microsoft.AspNetCore.Cryptography.Internal.dll": "sha256-6J\/fdV6fYkm1i5UKjoiZYAz6uyF5\/R+Z4eZytS1czH0=",
       "Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": "sha256-ix0viY4UcZl1yQlNtBMZ7bFDKZY70pZ+014FgjiARqE=",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": "sha256-6ugB6ZMsjc2GkWwKVwnMaiIl9H6izNkbqzsFApYD3Hk=",
@@ -205,15 +208,15 @@
       "mscorlib.dll": "sha256-0qsbc1acYr3S6P7t9gSYyghOhMVs3CTJ9ukQ1VXqksY=",
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
-      "Chat-Reenbet-brazor.Models.dll": "sha256-+pdkbzVKA2bZj5znM+kvGZUBRw9IhpsNpxPPrtl+xy4=",
-      "Chat-Reenbet-brazor.Client.dll": "sha256-Lq1jptw81oeP+8HVY02SFjNmYTHrDIs6rWTBGNHeGPo="
+      "Chat-Reenbet-brazor.Models.dll": "sha256-3jIBaoP6d4DdR0ctI6lsirUvrgVCDf2tGr1hdEw30Vw=",
+      "Chat-Reenbet-brazor.Client.dll": "sha256-LZB+aRRgWXXbs08wQe0BpVyHqHdhX1BDkqu8LQDCbl8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Chat-Reenbet-brazor.Models.pdb": "sha256-GJ16Gg4axaNrlGJPzsYtnH9cCAXq+avpeZkZlBREckI=",
-      "Chat-Reenbet-brazor.Client.pdb": "sha256-JfD2Ra+Exl1N6PsbIo6jRiPux2uzgVokbbvfw+Wvz6I="
+      "Chat-Reenbet-brazor.Models.pdb": "sha256-2Ow3VWixYMOgPWE44UM0UZIvBs8Si5auggejUH1ARUA=",
+      "Chat-Reenbet-brazor.Client.pdb": "sha256-dZDF+5e1rvR17wKfkaDiZypRRuuiqmcx4yMOELShbvU="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",

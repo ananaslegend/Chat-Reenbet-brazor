@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
-using Chat_Reenbet_brazor.DB.Context;
+using Chat_Reenbet_brazor.DB;
 using Chat_Reenbet_brazor.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
@@ -30,9 +30,9 @@ namespace Chat_Reenbet_brazor.Server
                 
             });
 
-            services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationContext>()
-                .AddDefaultTokenProviders();
+            // services.AddIdentity<User, IdentityRole>()
+            //     .AddEntityFrameworkStores<ApplicationContext>()
+            //     .AddDefaultTokenProviders();
 
             services.AddControllersWithViews();
             services.AddRazorPages();

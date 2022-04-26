@@ -2,12 +2,13 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Chat_Reenbet_brazor.Models;
 
-namespace Chat_Reenbet_brazor.DB.Context
+namespace Chat_Reenbet_brazor.DB
 {
-    public class ApplicationContext : IdentityDbContext<User>
+    public class ApplicationContext : DbContext
     {
         public DbSet<Chat> Chats { get; set; }
         public DbSet<Massage> Massages { get; set; }
+        public DbSet<User> Users { get; set; }
         public ApplicationContext(DbContextOptions<ApplicationContext> options): base(options) { }
 
         // public ApplicationContext() { }

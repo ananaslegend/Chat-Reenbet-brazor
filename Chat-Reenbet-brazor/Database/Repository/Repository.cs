@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 //using System.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 
-namespace Chat_Reenbet_brazor.DB.Repository
+namespace Chat_Reenbet_brazor.DB
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {

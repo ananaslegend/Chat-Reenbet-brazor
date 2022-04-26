@@ -46,7 +46,7 @@
           "Microsoft.AspNetCore.Authentication": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.OAuth": "5.0.0.0",
           "Microsoft.AspNetCore.Authorization.Policy": "5.0.0.0",
-          "Microsoft.AspNetCore.Components.Authorization": "5.0.0.0",
+          "Microsoft.AspNetCore.Components.Authorization.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Components.Server": "5.0.0.0",
           "Microsoft.AspNetCore.Connections.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.CookiePolicy": "5.0.0.0",
@@ -322,6 +322,20 @@
           "Chat-Reenbet-brazor.Server.dll": {}
         }
       },
+      "Blazored.LocalStorage/4.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.13"
+        },
+        "runtime": {
+          "lib/net5.0/Blazored.LocalStorage.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Blazored.LocalStorage.dll": {}
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -365,6 +379,12 @@
         }
       },
       "Microsoft.AspNetCore.Components.Analyzers/5.0.13": {},
+      "Microsoft.AspNetCore.Components.Authorization/5.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "5.0.13",
+          "Microsoft.AspNetCore.Components": "5.0.13"
+        }
+      },
       "Microsoft.AspNetCore.Components.Forms/5.0.13": {
         "dependencies": {
           "Microsoft.AspNetCore.Components": "5.0.13"
@@ -413,6 +433,21 @@
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.WebAssembly.Authentication/5.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Authorization": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.13"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52605"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll": {}
         }
       },
       "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.13": {
@@ -1520,8 +1555,11 @@
       },
       "Chat-Reenbet-brazor.Client/1.0.0": {
         "dependencies": {
+          "Blazored.LocalStorage": "4.2.0",
           "Chat-Reenbet-brazor.Models": "1.0.0",
+          "Microsoft.AspNetCore.Components.Authorization": "5.0.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.13",
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "5.0.0",
           "System.Net.Http.Json": "5.0.0"
         },
         "runtime": {
@@ -1599,7 +1637,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Components.Authorization/5.0.0.0": {
+      "Microsoft.AspNetCore.Components.Authorization.Reference/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Components.Authorization.dll": {}
         },
@@ -3215,6 +3253,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Blazored.LocalStorage/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cn6h0QrLw0AIwkx/LiogtBycBFHIeqT/ptXIt871/07qTCvIGXCQZpc1s38wpmTfYLvpha5+5yn6TvIaY9ziyg==",
+      "path": "blazored.localstorage/4.2.0",
+      "hashPath": "blazored.localstorage.4.2.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -3243,6 +3288,13 @@
       "path": "microsoft.aspnetcore.components.analyzers/5.0.13",
       "hashPath": "microsoft.aspnetcore.components.analyzers.5.0.13.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Components.Authorization/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I++r4RdziNB9HeQbkHQvzg2N0rX4dSmA1105OnR5xMKZKL8E7TOKR+Mwf45uXgKvxYb08otPrZWTx1M5rmL/8g==",
+      "path": "microsoft.aspnetcore.components.authorization/5.0.0",
+      "hashPath": "microsoft.aspnetcore.components.authorization.5.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Components.Forms/5.0.13": {
       "type": "package",
       "serviceable": true,
@@ -3263,6 +3315,13 @@
       "sha512": "sha512-pg9tD+iS3ki4aBSK6gIIfnv+kfqZ1H/BUza7j1wSAIrLG/ftshbUEgVk5DxigArhpSIk7J+NJXMt5UFHLd4GUQ==",
       "path": "microsoft.aspnetcore.components.webassembly/5.0.13",
       "hashPath": "microsoft.aspnetcore.components.webassembly.5.0.13.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.WebAssembly.Authentication/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-APmMSqo0ZKmDK9q2+F31nHgDG6AEguUei1ZxgeLwNu8LeuIZN3Inh5Xu1dzrpGQwckbyOpC4+z2CzJVVjMZp1Q==",
+      "path": "microsoft.aspnetcore.components.webassembly.authentication/5.0.0",
+      "hashPath": "microsoft.aspnetcore.components.webassembly.authentication.5.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Components.WebAssembly.Server/5.0.13": {
       "type": "package",
@@ -4105,7 +4164,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Components.Authorization/5.0.0.0": {
+    "Microsoft.AspNetCore.Components.Authorization.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
