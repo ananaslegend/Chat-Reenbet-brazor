@@ -21,7 +21,7 @@ namespace Chat_Reenbet_brazor.DB
 
         public IMassageRepository Massages { get; private set; }
 
-        public async Task<int> Complete()
+        public async Task<int> CompleteAsync()
         {
             return await _context.SaveChangesAsync();
         }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/qxXeEQH6c+oMbPPOqUsITEU8HhQSZ5dqeKmu1Atv7BAfZk53aOoVibDIqYtG8/8fP4jklDxsl5XK7wbCvMZfw==",
+  "dgSpecHash": "2ssBe3+Qe1PXR9qYyZQ/n02Pi9q/hib8SRhJdajDIheOMjDxirvUMqFmItieEqs4gP7EHX3szPc7rcWlOFkmuQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Client\\Chat-Reenbet-brazor.Client.csproj",
   "expectedPackageFiles": [
@@ -14,10 +14,18 @@
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\5.0.13\\microsoft.aspnetcore.components.webassembly.5.0.13.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\5.0.0\\microsoft.aspnetcore.components.webassembly.authentication.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\5.0.13\\microsoft.aspnetcore.components.webassembly.devserver.5.0.13.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\5.0.13\\microsoft.aspnetcore.connections.abstractions.5.0.13.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.0\\microsoft.aspnetcore.cryptography.keyderivation.5.0.0.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\5.0.13\\microsoft.aspnetcore.http.connections.client.5.0.13.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\5.0.13\\microsoft.aspnetcore.http.connections.common.5.0.13.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.13\\microsoft.aspnetcore.http.features.5.0.13.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.0\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.metadata\\5.0.13\\microsoft.aspnetcore.metadata.5.0.13.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\5.0.13\\microsoft.aspnetcore.signalr.client.5.0.13.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\5.0.13\\microsoft.aspnetcore.signalr.client.core.5.0.13.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\5.0.13\\microsoft.aspnetcore.signalr.common.5.0.13.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\5.0.13\\microsoft.aspnetcore.signalr.protocols.json.5.0.13.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0\\microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
@@ -39,7 +47,7 @@
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
-    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.jsinterop\\5.0.13\\microsoft.jsinterop.5.0.13.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.13\\microsoft.jsinterop.webassembly.5.0.13.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
@@ -47,6 +55,7 @@
     "C:\\Users\\myfal\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\myfal\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512",
     "C:\\Users\\myfal\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.13\\microsoft.netcore.app.runtime.browser-wasm.5.0.13.nupkg.sha512"
   ],
   "logs": []

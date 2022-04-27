@@ -117,6 +117,20 @@ using Microsoft.AspNetCore.Components.Authorization;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\_Imports.razor"
+using System.Collections;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\_Imports.razor"
+using Chat_Reenbet_brazor.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -125,7 +139,7 @@ using Microsoft.AspNetCore.Components.Authorization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 41 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Shared\NavMenu.razor"
+#line 53 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

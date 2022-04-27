@@ -1,0 +1,32 @@
+@page "/registration"
+@inject IChatService chatService
+@inject NavigationManager NavManager
+
+
+<h3>Registration!</h3>
+
+<EditForm Model="user" OnSubmit="HandleRegistration">
+    <div class="form-group">
+        <label for="login">Your Login</label>
+        <InputText id="login" class="form-controll" @bind-Value="user.Login"/>
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <InputText id="password" class="form-controll" @bind-Value="user.Password" type="password"/>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit</button>
+</EditForm>
+
+
+
+@code
+{
+    User user = new User();
+
+    private void HandleRegistration()
+    {
+        chatService.RegistrateUser(user);
+        NavManager.NavigateTo("/login");
+    }
+}

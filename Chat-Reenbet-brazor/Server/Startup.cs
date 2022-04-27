@@ -10,6 +10,7 @@ using Chat_Reenbet_brazor.DB;
 using Chat_Reenbet_brazor.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.OpenApi.Models;
 
 namespace Chat_Reenbet_brazor.Server
 {
@@ -24,22 +25,38 @@ namespace Chat_Reenbet_brazor.Server
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+
             services.AddDbContext<ApplicationContext>(options => 
             {
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Chat-Reenbet-brazor.Server"));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                b => b.MigrationsAssembly("Chat-Reenbet-brazor.Server"));
                 
             });
+
+            services.AddScoped<IDbUnit, DbUnit>();
+
+            services.AddScoped<IRepository<User>, UserRepository>();
 
             // services.AddIdentity<User, IdentityRole>()
             //     .AddEntityFrameworkStores<ApplicationContext>()
             //     .AddDefaultTokenProviders();
 
-            services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo {Title = "Chat", Version = "v1"});});
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Chat V1"));
+            
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -48,7 +65,7 @@ namespace Chat_Reenbet_brazor.Server
             else
             {
                 app.UseExceptionHandler("/Error");
-               
+                app.UseHsts();
             }
 
             app.UseHttpsRedirection();
@@ -57,8 +74,8 @@ namespace Chat_Reenbet_brazor.Server
 
             app.UseRouting();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+            //app.UseAuthentication();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

@@ -117,6 +117,20 @@ using Microsoft.AspNetCore.Components.Authorization;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\_Imports.razor"
+using System.Collections;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\_Imports.razor"
+using Chat_Reenbet_brazor.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

@@ -117,6 +117,20 @@ using Microsoft.AspNetCore.Components.Authorization;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\_Imports.razor"
+using System.Collections;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 17 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\_Imports.razor"
+using Chat_Reenbet_brazor.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -126,21 +140,30 @@ using Microsoft.AspNetCore.Components.Authorization;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 24 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Pages\Login.razor"
+#line 25 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Pages\Login.razor"
  
     User user = new User();
 
     private async void HandleLogin()
     {
-        Console.WriteLine("Log me in!");
-        await LocalStorage.SetItemAsync<string>("user_login", user.Login);
-        await stateProvider.GetAuthenticationStateAsync();
-        NavManager.NavigateTo("");
+        if (await chatService.Login(user))
+        {
+            await LocalStorage.SetItemAsync<string>("user_login", user.Login);
+            await stateProvider.GetAuthenticationStateAsync();
+            NavManager.NavigateTo("");
+        }
+        else
+        {
+            System.Console.WriteLine("Problem with login");
+        }
+
+        
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IChatService chatService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider stateProvider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService LocalStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }

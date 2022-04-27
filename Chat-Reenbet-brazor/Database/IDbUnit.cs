@@ -11,6 +11,6 @@ namespace Chat_Reenbet_brazor.DB
         public IChatRepository Chats { get; }  
         public IMassageRepository Massages { get; }
         
-        Task<int> Complete();
+        Task<int> CompleteAsync();
     }
 }

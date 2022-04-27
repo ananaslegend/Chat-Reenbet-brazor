@@ -8,6 +8,9 @@ namespace Chat_Reenbet_brazor.DB
 {
     public interface IUserRepository : IRepository<User>
     {
-        
+        public User FindbyLogin(string login);
+        public bool LoginUser(User user);
     }
+
+    
 }

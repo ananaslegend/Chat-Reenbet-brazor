@@ -18,5 +18,27 @@ namespace Chat_Reenbet_brazor.DB
         { 
             get { return _context as ApplicationContext; }
         }
+
+        public User FindbyLogin(string login)
+        {
+            var user = ApplicationContext.Users
+                        .Where(u => u.Login == login)
+                        .First();
+
+            return user;
+        }
+
+        public bool LoginUser(User user)
+        {
+            var item = ApplicationContext.Users
+                        .Where(u => u.Login == user.Login)
+                        .First();
+            if (item.Password == user.Password)
+            {
+                return true;
+            }
+            
+            return false;
+        }
     }
 }
