@@ -16,7 +16,6 @@ namespace Chat_Reenbet_brazor.Server.Controllers
     public class LoginController : ControllerBase
     {
         private readonly IDbUnit _dbUnit;
-        private readonly UserRepository _context;
 
         public LoginController(IDbUnit dbUnit)
         {
@@ -32,6 +31,26 @@ namespace Chat_Reenbet_brazor.Server.Controllers
             }
             
             return NotFound();
+        }
+
+        [HttpGet("User/{login}")]
+        public ActionResult<User> FindbyLogin([FromRoute]string login)
+        {
+            
+            var user = _dbUnit.Users.FindbyLogin(login);
+            if(user is not null)
+            {
+                return Ok(user);
+            }
+
+            return NotFound();
+        }
+        
+        [HttpGet("{id}")]
+        public ActionResult<User> FindbyID([FromRoute]int id)
+        {
+            
+            return Ok();
         }
         
     }

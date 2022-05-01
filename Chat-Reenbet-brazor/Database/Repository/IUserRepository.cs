@@ -10,6 +10,7 @@ namespace Chat_Reenbet_brazor.DB
     {
         public User FindbyLogin(string login);
         public bool LoginUser(User user);
+        public ICollection<ChatNav> GetUserChats(string login);
     }
 
     

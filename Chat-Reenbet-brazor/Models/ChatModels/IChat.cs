@@ -11,6 +11,6 @@ namespace Chat_Reenbet_brazor.Models
         public string Name { get; set; }
         public ChatType Type { get; set; }
         public ICollection<User> ChatUsers { get; set; }
-        public ICollection<Massage> Massages { get; set; }
+        //public ICollection<Message> Messages { get; set; }
     }
 }

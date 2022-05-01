@@ -51,7 +51,7 @@ namespace ChatReenbetbrazor.Server.Migrations
                     b.ToTable("Chats");
                 });
 
-            modelBuilder.Entity("Chat_Reenbet_brazor.Models.Massage", b =>
+            modelBuilder.Entity("Chat_Reenbet_brazor.Models.Message", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -80,7 +80,7 @@ namespace ChatReenbetbrazor.Server.Migrations
 
                     b.HasIndex("ReplyId");
 
-                    b.ToTable("Massages");
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("Chat_Reenbet_brazor.Models.User", b =>
@@ -115,17 +115,17 @@ namespace ChatReenbetbrazor.Server.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Chat_Reenbet_brazor.Models.Massage", b =>
+            modelBuilder.Entity("Chat_Reenbet_brazor.Models.Message", b =>
                 {
                     b.HasOne("Chat_Reenbet_brazor.Models.User", "Author")
                         .WithMany()
                         .HasForeignKey("AuthorId");
 
                     b.HasOne("Chat_Reenbet_brazor.Models.Chat", "Chat")
-                        .WithMany("Massages")
+                        .WithMany("Messages")
                         .HasForeignKey("ChatId");
 
-                    b.HasOne("Chat_Reenbet_brazor.Models.Massage", "Reply")
+                    b.HasOne("Chat_Reenbet_brazor.Models.Message", "Reply")
                         .WithMany()
                         .HasForeignKey("ReplyId");
 
@@ -138,7 +138,7 @@ namespace ChatReenbetbrazor.Server.Migrations
 
             modelBuilder.Entity("Chat_Reenbet_brazor.Models.Chat", b =>
                 {
-                    b.Navigation("Massages");
+                    b.Navigation("Messages");
                 });
 #pragma warning restore 612, 618
         }

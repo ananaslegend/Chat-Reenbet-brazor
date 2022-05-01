@@ -8,6 +8,8 @@ namespace Chat_Reenbet_brazor.DB
 {
     public interface IChatRepository : IRepository<Chat>
     {
-        
+        //public Task AddChat(Chat chat);
+
+        public Task AddChatToDb(Chat chat);
     }
 }

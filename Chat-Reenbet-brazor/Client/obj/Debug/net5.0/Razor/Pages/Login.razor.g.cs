@@ -128,6 +128,13 @@ using Chat_Reenbet_brazor.Client.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 18 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\_Imports.razor"
+using Microsoft.AspNetCore.SignalR.Client;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {

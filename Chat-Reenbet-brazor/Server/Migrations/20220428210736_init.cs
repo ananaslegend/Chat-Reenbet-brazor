@@ -58,7 +58,7 @@ namespace ChatReenbetbrazor.Server.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Massages",
+                name: "Messages",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -70,21 +70,21 @@ namespace ChatReenbetbrazor.Server.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Massages", x => x.Id);
+                    table.PrimaryKey("PK_Messages", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Massages_Chats_ChatId",
+                        name: "FK_Messages_Chats_ChatId",
                         column: x => x.ChatId,
                         principalTable: "Chats",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Massages_Massages_ReplyId",
+                        name: "FK_Messages_Messages_ReplyId",
                         column: x => x.ReplyId,
-                        principalTable: "Massages",
+                        principalTable: "Messages",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Massages_Users_AuthorId",
+                        name: "FK_Messages_Users_AuthorId",
                         column: x => x.AuthorId,
                         principalTable: "Users",
                         principalColumn: "Id",
@@ -97,18 +97,18 @@ namespace ChatReenbetbrazor.Server.Migrations
                 column: "UserChatsId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Massages_AuthorId",
-                table: "Massages",
+                name: "IX_Messages_AuthorId",
+                table: "Messages",
                 column: "AuthorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Massages_ChatId",
-                table: "Massages",
+                name: "IX_Messages_ChatId",
+                table: "Messages",
                 column: "ChatId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Massages_ReplyId",
-                table: "Massages",
+                name: "IX_Messages_ReplyId",
+                table: "Messages",
                 column: "ReplyId");
         }
 
@@ -118,7 +118,7 @@ namespace ChatReenbetbrazor.Server.Migrations
                 name: "ChatUser");
 
             migrationBuilder.DropTable(
-                name: "Massages");
+                name: "Messages");
 
             migrationBuilder.DropTable(
                 name: "Chats");

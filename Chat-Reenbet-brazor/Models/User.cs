@@ -10,7 +10,7 @@ namespace Chat_Reenbet_brazor.Models
         public Guid Id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
-        public ICollection<Chat>? UserChats { get; set; }
+        public ICollection<Chat> UserChats { get; set; }
         
     }
 }

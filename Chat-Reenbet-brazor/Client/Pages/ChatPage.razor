@@ -1,0 +1,16 @@
+@page "/chatpage"
+@inject NavigationManager navigationManager
+
+@code 
+{
+    private HubConnection hubConnection;
+
+   private async Task Connect()
+   {
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl(navigationManager.ToAbsoluteUri("/chathub"))
+            .Build();
+
+        //hubConnection.ConnectionId;
+   }
+}

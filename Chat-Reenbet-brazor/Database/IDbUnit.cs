@@ -5,12 +5,11 @@ using System.Threading.Tasks;
 
 namespace Chat_Reenbet_brazor.DB
 {
-    public interface IDbUnit
+    public interface IDbUnit : IDisposable
     {
         public IUserRepository Users { get; }
         public IChatRepository Chats { get; }  
-        public IMassageRepository Massages { get; }
-        
+        public IMessageRepository Messages { get; }
         Task<int> CompleteAsync();
     }
 }

@@ -18,7 +18,7 @@ namespace Chat_Reenbet_brazor.Client.Services
         }
         public List<User> Users { get ; set ; } = new List<User>();
         public List<Chat> Chats { get; set; } = new List<Chat>();
-        public List<Massage> Massages { get; set; } = new List<Massage>();
+        public List<Message> Messages { get; set; } = new List<Message>();
 
         public async Task GetAllUsers()
         {
@@ -41,9 +41,38 @@ namespace Chat_Reenbet_brazor.Client.Services
                 return true;
             }
 
-            return false;
-            //var result = await req.Content.ReadFromJsonAsync<>
-            //HttpResponseMessage response;  
+            return false;  
+        }
+
+        public async Task<User> GetUserbyLogin(string login)
+        {
+           var result = await _httpClient.GetFromJsonAsync<User>($"/api/Login/User/{login}");
+            
+            if(result != null)
+            {
+                return result;
+            }
+
+            throw new Exception("User not found");
+        }
+
+        public async Task CreateChat(Chat chat)
+        {
+            var result = await _httpClient.PostAsJsonAsync("api/Chat/CreateChat", chat);
+        }
+
+        public async Task<List<ChatNav>> GetAllUserChats(string login)
+        {
+            List<ChatNav> result = await _httpClient.GetFromJsonAsync<List<ChatNav>>($"/api/Chat/GetAllUserChats/{login}");
+
+            foreach(var item in result)
+            {
+                System.Console.WriteLine(item);
+            }
+            
+           return result;
+
+            
         }
     }
 }

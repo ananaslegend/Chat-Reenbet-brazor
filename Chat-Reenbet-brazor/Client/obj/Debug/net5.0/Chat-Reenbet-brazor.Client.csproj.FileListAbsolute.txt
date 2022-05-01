@@ -699,3 +699,7 @@ D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\buil
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\voRBgvTP.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\W8Y+B4ey.gz
 D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\build-gz\0Bw1DvgN.gz
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\RazorDeclaration\Pages\NewChat.razor.g.cs
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Razor\Pages\NewChat.razor.g.cs
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\RazorDeclaration\Pages\ChatPage.razor.g.cs
+D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\obj\Debug\net5.0\Razor\Pages\ChatPage.razor.g.cs

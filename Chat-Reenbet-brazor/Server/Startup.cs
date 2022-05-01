@@ -11,6 +11,7 @@ using Chat_Reenbet_brazor.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.OpenApi.Models;
+using Chat_Reenbet_brazor.Server.Hubs;
 
 namespace Chat_Reenbet_brazor.Server
 {
@@ -34,9 +35,9 @@ namespace Chat_Reenbet_brazor.Server
                 
             });
 
-            services.AddScoped<IDbUnit, DbUnit>();
+            services.AddSignalR();
 
-            services.AddScoped<IRepository<User>, UserRepository>();
+            services.AddTransient<IDbUnit, DbUnit>();
 
             // services.AddIdentity<User, IdentityRole>()
             //     .AddEntityFrameworkStores<ApplicationContext>()
@@ -54,7 +55,7 @@ namespace Chat_Reenbet_brazor.Server
             app.UseSwagger();
 
             app.UseSwaggerUI(c =>
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Chat V1"));
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Chat V1")); //https://localhost:5001/swagger/index.html
             
 
             if (env.IsDevelopment())
@@ -79,6 +80,7 @@ namespace Chat_Reenbet_brazor.Server
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<ChatHub>("/chathub");
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
                 endpoints.MapFallbackToFile("index.html");

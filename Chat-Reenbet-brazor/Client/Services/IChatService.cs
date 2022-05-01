@@ -8,10 +8,13 @@ namespace Chat_Reenbet_brazor.Client.Services
     {
         public List<User> Users { get; set; }
         public List<Chat> Chats { get; set; }
-        public List<Massage> Massages { get; set; }
+        public List<Message> Messages { get; set; }
 
         public Task GetAllUsers();
         public Task RegistrateUser(User user);
-         public Task<bool> Login(User user);
+        public Task<bool> Login(User user);
+        public Task<User> GetUserbyLogin(string login);
+        public Task CreateChat(Chat chat);
+        public Task<List<ChatNav>> GetAllUserChats(string login);
     }
 }

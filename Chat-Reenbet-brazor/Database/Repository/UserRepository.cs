@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Chat_Reenbet_brazor.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Chat_Reenbet_brazor.DB
 {
@@ -23,9 +24,29 @@ namespace Chat_Reenbet_brazor.DB
         {
             var user = ApplicationContext.Users
                         .Where(u => u.Login == login)
-                        .First();
+                        .FirstOrDefault();
 
             return user;
+        }
+
+        public ICollection<ChatNav> GetUserChats(string login)
+        {
+            var items = ApplicationContext.Users
+                        .Include(u => u.UserChats)
+                        .FirstOrDefault(u => u.Login == login)
+                        .UserChats;
+
+            ICollection<ChatNav> result = new List<ChatNav>();
+            foreach(var item in items)
+            {
+                result.Add(new ChatNav(){
+                    Id = item.Id,
+                    Name = item.Name,
+                    Type = item.Type
+                });
+            }
+
+            return result;
         }
 
         public bool LoginUser(User user)

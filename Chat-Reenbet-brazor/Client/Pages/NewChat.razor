@@ -1,0 +1,57 @@
+@page "/newchat"
+@inject IChatService chatService
+@inject ILocalStorageService LocalStorage
+
+<h3>Create new chat!</h3>
+
+<EditForm Model="chat" OnSubmit="HandleCreateChat">
+    <div class="form-group">
+        <label for="login">Name of chat</label>
+        <InputText id="name" class="form-control" @bind-Value="chat.Name"/>
+    </div>
+    <div class="form-group">
+        <label for="password">Members</label>
+        <InputText id="members" class="form-control" @bind-Value="members"/>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Create</button>
+</EditForm>
+
+
+
+@code
+{
+    string members;
+    Chat chat = new Chat();
+
+
+    private async void HandleCreateChat()
+    {
+        chat.ChatUsers = new List<User>();
+        chat.Messages = new List<Message>();
+
+        var arrMembers = members.Split(" ").ToList();
+        if (arrMembers.Count > 1)
+        {
+            chat.Type = ChatType.PublicChat;
+        }
+        else
+        {
+            chat.Type = ChatType.PrivateChat; 
+        }
+
+        foreach(var member in arrMembers)
+        {
+            User user = await chatService.GetUserbyLogin(member);
+
+            chat.ChatUsers.Add(user);
+        }
+        string currentUserLogin = await LocalStorage.GetItemAsStringAsync("user_login");
+
+        var currentUser = await chatService.GetUserbyLogin(currentUserLogin.Trim('"'));
+
+        chat.ChatUsers.Add(currentUser);
+
+        await chatService.CreateChat(chat);
+    }
+}

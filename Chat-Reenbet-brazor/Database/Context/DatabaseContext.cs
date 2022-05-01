@@ -7,7 +7,7 @@ namespace Chat_Reenbet_brazor.DB
     public class ApplicationContext : DbContext
     {
         public DbSet<Chat> Chats { get; set; }
-        public DbSet<Massage> Massages { get; set; }
+        public DbSet<Message> Messages { get; set; }
         public DbSet<User> Users { get; set; }
         public ApplicationContext(DbContextOptions<ApplicationContext> options): base(options) { }
 

@@ -6,7 +6,7 @@ using Chat_Reenbet_brazor.Models;
 
 namespace Chat_Reenbet_brazor.DB
 {
-    public interface IMassageRepository : IRepository<Massage>
+    public interface IMessageRepository : IRepository<Message>
     {
         
     }

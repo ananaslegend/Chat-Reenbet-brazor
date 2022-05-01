@@ -6,9 +6,9 @@ using Chat_Reenbet_brazor.Models;
 
 namespace Chat_Reenbet_brazor.DB
 {
-    public class MassageRepository : Repository<Massage>, IMassageRepository
+    public class MessageRepository : Repository<Message>, IMessageRepository
     {
-        public MassageRepository(ApplicationContext context) : base(context) 
+        public MessageRepository(ApplicationContext context) : base(context) 
         {
 
         }

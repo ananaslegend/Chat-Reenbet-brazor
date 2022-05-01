@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Chat_Reenbet_brazor.Client.Shared
+namespace Chat_Reenbet_brazor.Client.Pages
 {
     #line hidden
     using System;
@@ -138,7 +138,8 @@ using Microsoft.AspNetCore.SignalR.Client;
 #line default
 #line hidden
 #nullable disable
-    public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/newchat")]
+    public partial class NewChat : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -146,41 +147,47 @@ using Microsoft.AspNetCore.SignalR.Client;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 86 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Shared\NavMenu.razor"
-       
-    private bool collapseNavMenu = true;
-    private List<ChatNav> userChats = new List<ChatNav>();
+#line 23 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Pages\NewChat.razor"
+ 
+    string members;
+    Chat chat = new Chat();
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private void ToggleNavMenu()
+    private async void HandleCreateChat()
     {
-        collapseNavMenu = !collapseNavMenu;
+        chat.ChatUsers = new List<User>();
+        chat.Messages = new List<Message>();
+
+        var arrMembers = members.Split(" ").ToList();
+        if (arrMembers.Count > 1)
+        {
+            chat.Type = ChatType.PublicChat;
+        }
+        else
+        {
+            chat.Type = ChatType.PrivateChat; 
+        }
+
+        foreach(var member in arrMembers)
+        {
+            User user = await chatService.GetUserbyLogin(member);
+
+            chat.ChatUsers.Add(user);
+        }
+        string currentUserLogin = await LocalStorage.GetItemAsStringAsync("user_login");
+
+        var currentUser = await chatService.GetUserbyLogin(currentUserLogin.Trim('"'));
+
+        chat.ChatUsers.Add(currentUser);
+
+        await chatService.CreateChat(chat);
     }
-
-    private async void Logout()
-    {
-        await LocalStorage.RemoveItemAsync("user_login");
-        await stateProvider.GetAuthenticationStateAsync();
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        string currentUser = await LocalStorage.GetItemAsStringAsync("user_login");
-
-        currentUser = currentUser.Trim('"');
-        System.Console.WriteLine(currentUser);
-
-        userChats = await chatService.GetAllUserChats(currentUser);
-        System.Console.WriteLine("GotAllChats");
-    } 
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService LocalStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IChatService chatService { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider stateProvider { get; set; }
     }
 }
 #pragma warning restore 1591
