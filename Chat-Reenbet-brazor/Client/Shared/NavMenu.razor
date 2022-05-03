@@ -11,7 +11,8 @@
 </div>
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu" style="height:985px;overflow-y:scroll;">
-    <ul class="nav flex-column">
+    <p><span style="font-size: medium; color: white; padding: 20%; padding-top: 10%;">@(userLogin)</span></p>
+    <ul class="nav flex-column"> 
         <li class="nav-item px-3">
             <AuthorizeView>
                 <NotAuthorized>
@@ -29,11 +30,6 @@
                     </a>
                     </li>
                     <li class="nav-item px-3">
-                        <NavLink class="nav-link" href="find" >
-                            <span class="oi oi-magnifying-glass" aria-hidden="true"></span> Find
-                        </NavLink>
-                    </li>
-                    <li class="nav-item px-3">
                         <NavLink class="nav-link" href="newchat" >
                             <span class="oi oi-plus" aria-hidden="true"></span> New Chat
                         </NavLink>
@@ -45,8 +41,8 @@
                     {
                         @foreach (var item in userChats)
                         {
-                        <li class="nav-item px-3" style=" ">
-                            <NavLink class="nav-link " href="">
+                        <li class="nav-item px-3" style=" "> 
+                            <NavLink class="nav-link" href="@($"chatpage/{item.Id}")">
                             @if (@item.Type == ChatType.PrivateChat)
                             {
                                 <span class="oi oi-person" aria-hidden="true"></span> @item.Name
@@ -85,6 +81,7 @@
 
 @code {
     private bool collapseNavMenu = true;
+    private string userLogin;
     private List<ChatNav> userChats = new List<ChatNav>();
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
@@ -109,6 +106,9 @@
 
         userChats = await chatService.GetAllUserChats(currentUser);
         System.Console.WriteLine("GotAllChats");
+
+        userLogin = await LocalStorage.GetItemAsStringAsync("user_login");
+        userLogin = userLogin.Trim('"');
     } 
 }
 

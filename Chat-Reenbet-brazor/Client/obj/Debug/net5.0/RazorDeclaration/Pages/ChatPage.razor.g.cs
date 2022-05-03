@@ -138,7 +138,7 @@ using Microsoft.AspNetCore.SignalR.Client;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/chatpage")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/chatpage/{chatId}")]
     public partial class ChatPage : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -147,9 +147,54 @@ using Microsoft.AspNetCore.SignalR.Client;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 5 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Pages\ChatPage.razor"
+#line 40 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Pages\ChatPage.razor"
  
+    [Parameter]
+    public string chatId { get; set; }
     private HubConnection hubConnection;
+    private List<Message> messages = new List<Message>();
+    private string userName = string.Empty;
+    private string message = string.Empty;
+    private int loaded = 0;
+    ElementReference TextSpaceRef;
+    private bool allLoaded = false;
+    private Chat chat = new Chat();
+
+    private async Task Send()
+    {
+        
+        string author = await LocalStorage.GetItemAsStringAsync("user_login");
+        author = author.Trim('"');
+
+         await hubConnection.SendAsync("SendMessage", message, author, chatId); 
+        loaded += 1;        
+    }
+
+    private async Task EditMessage()
+    {
+        
+    }
+
+    private async Task LoadMore()
+    {
+        await hubConnection.InvokeAsync("GetMassagePack", chatId, loaded, Convert.ToString(hubConnection));
+        StateHasChanged();
+    }
+
+    private async Task ReplyMessage(Guid replyId)
+    {
+        string author = await LocalStorage.GetItemAsStringAsync("user_login");
+        author = author.Trim('"');
+        System.Console.WriteLine(replyId);
+        await hubConnection.SendAsync("ReplyMessage", message, author, chatId, replyId); 
+        loaded += 1;
+    }
+
+    private async Task GetMessagePack()
+    {
+        await hubConnection.SendAsync("GetMassagePack", chatId, loaded); 
+        loaded += 20;
+    }
 
    private async Task Connect()
    {
@@ -157,12 +202,74 @@ using Microsoft.AspNetCore.SignalR.Client;
             .WithUrl(navigationManager.ToAbsoluteUri("/chathub"))
             .Build();
 
-        //hubConnection.ConnectionId;
+        hubConnection.On<Message>("AddMessage", (msg) => 
+            {
+                messages.Add(msg); 
+                StateHasChanged();
+                JSRuntime.InvokeVoidAsync("scrollToBottom", TextSpaceRef);
+            });
+
+            hubConnection.On<Message>("AddReply", (rpl) => 
+            {
+                System.Console.WriteLine(rpl); 
+                messages.Add(rpl);
+                StateHasChanged();
+                JSRuntime.InvokeVoidAsync("scrollToBottom", TextSpaceRef);
+            });
+
+        hubConnection.On<IList<Message>>("AddMessagePack", (pack =>
+            {
+                System.Console.WriteLine(pack.Count);
+                  messages.InsertRange(0, pack);
+                  StateHasChanged();
+                  loaded += 20;
+                  
+            }));
+
+        await hubConnection.StartAsync();
+
+        System.Console.WriteLine("Connected to hub");
    }
+ 
+    protected override async Task OnParametersSetAsync()
+    {
+        if(hubConnection != null)
+        {
+            await hubConnection.InvokeAsync("LeaveRoom", chat.Id);
+        }
+        
+        chat = await chatService.GetChatById(Guid.Parse(chatId));
+
+        await Connect();
+
+        StateHasChanged();
+
+        messages.Clear();
+
+        loaded = 0;
+
+        allLoaded = false;
+        
+        await hubConnection.InvokeAsync("JoinRoom", chatId);
+
+        System.Console.WriteLine("joined room");
+
+        await hubConnection.InvokeAsync("GetMassagePack", chatId, loaded, Convert.ToString(hubConnection));
+
+        await JSRuntime.InvokeVoidAsync("scrollToBottom", TextSpaceRef);
+
+        allLoaded = true;
+        //System.Console.WriteLine(messages.Count);
+
+    }
+ 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JSRuntime { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ILocalStorageService LocalStorage { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IChatService chatService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navigationManager { get; set; }
     }
 }

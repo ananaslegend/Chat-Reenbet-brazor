@@ -10,6 +10,7 @@ using Chat_Reenbet_brazor.Models;
 using Microsoft.AspNetCore.SignalR;
 using Chat_Reenbet_brazor.Server.Hubs;
 using Microsoft.AspNetCore.Authorization;
+using System.Web;
 
 namespace Chat_Reenbet_brazor.Server.Controllers
 {
@@ -27,24 +28,41 @@ namespace Chat_Reenbet_brazor.Server.Controllers
             _chatHub = chatHub;
         }
         
-        [HttpPost("[action]/{connectionId}/{chatName}")]
-        public async Task<ActionResult> JoinChat(string connectionId, string chatName)
-        {
-            await _chatHub.Groups.AddToGroupAsync(connectionId, chatName);
-
-            return Ok();
-        }
-
-        [HttpPost("[action]/{connectionId}/{chatName}")]
-        public async Task<ActionResult> LeaveChat(string connectionId, string chatName)
-        {
-            await _chatHub.Groups.RemoveFromGroupAsync(connectionId, chatName);
-
-            return Ok();
-        }
-
-        // public async Task<ActionResult> SendMessage(Guid chatId, Message message, string chatName)
+        // [HttpGet("[action]/{connectionId}/{chatGuid}")]
+        // public async Task<ActionResult> JoinRoom(string connectionId, string chatGuid)
         // {
+        //     chatGuid = HttpUtility.HtmlDecode(chatGuid);
+        //     try
+        //     {
+        //         await _chatHub.Groups.AddToGroupAsync(connectionId, chatGuid);
+        //     }
+        //     catch(Exception ex)
+        //     {
+        //         return Ok(ex);
+        //     }
+
+        //     return Ok();
+        // }
+
+        // [HttpGet("[action]/{connectionId}/{chatName}")]
+        // public async Task<ActionResult> LeaveRoom(string connectionId, string chatName)
+        // {
+        //     await _chatHub.Groups.RemoveFromGroupAsync(connectionId, chatName);
+
+        //     return Ok();
+        // }
+
+        // public async Task<ActionResult> SendMessage(Chat chat, string messageString, string chatName, User author)
+        // {
+        //     var message = new Message()
+        //     {
+        //         Data = messageString,
+        //         Author = author,
+        //         Date = DateTime.Now,
+        //         Reply = null,
+        //         Chat = chat
+        //     };
+
         //     _dbUnit.Messages.Add(message);
         //     await _dbUnit.CompleteAsync();
 
@@ -57,7 +75,6 @@ namespace Chat_Reenbet_brazor.Server.Controllers
         [HttpPost("[action]/")]
         public async Task<ActionResult> CreateChat(Chat chat) 
         {
-            //сюда бы мапер...
             Chat chatToAdd = new Chat()
             {
                 Name = chat.Name,
@@ -65,10 +82,6 @@ namespace Chat_Reenbet_brazor.Server.Controllers
                 Messages = new List<Message>(),
                 ChatUsers = new List<User>()
             };
-            // chatToAdd.Name = chat.Name;
-            // chatToAdd.Type = chat.Type;
-            // chatToAdd.Messages = new List<Message>();
-            // chatToAdd.ChatUsers = new List<User>();
 
             foreach(var user in chat.ChatUsers)
             {
@@ -92,6 +105,18 @@ namespace Chat_Reenbet_brazor.Server.Controllers
             
             return NotFound(result);
         }
+
+        [HttpGet("[action]/{Id}")]
+        public ActionResult<Chat> GetChatById(Guid Id)
+        {
+            var result = _dbUnit.Chats.Find(c => c.Id == Id).FirstOrDefault();
+
+            if(result != null)
+                return Ok(result);
+            
+            return NotFound(result);
+        }
+
     }
     
 }

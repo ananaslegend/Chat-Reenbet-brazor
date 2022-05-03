@@ -5454,68 +5454,35 @@
         }
       },
       {
-        "HashCode": -673371732,
+        "HashCode": 1985255109,
         "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.ChatPage",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.Registration",
         "AssemblyName": "Chat-Reenbet-brazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ChatPage"
+            "TagName": "Registration"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.ChatPage"
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Registration"
         }
       },
       {
-        "HashCode": 758031076,
+        "HashCode": 567965226,
         "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.ChatPage",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.Registration",
         "AssemblyName": "Chat-Reenbet-brazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Chat_Reenbet_brazor.Client.Pages.ChatPage"
+            "TagName": "Chat_Reenbet_brazor.Client.Pages.Registration"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.ChatPage",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1152369980,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.Counter",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 622933068,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.Counter",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Chat_Reenbet_brazor.Client.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Counter",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Registration",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -5553,39 +5520,6 @@
         }
       },
       {
-        "HashCode": 722085460,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.Login",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Login"
-        }
-      },
-      {
-        "HashCode": 2105275409,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.Login",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Chat_Reenbet_brazor.Client.Pages.Login"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Login",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1563056621,
         "Kind": "Components.Component",
         "Name": "Chat_Reenbet_brazor.Client.Pages.NewChat",
@@ -5619,35 +5553,88 @@
         }
       },
       {
-        "HashCode": 1985255109,
+        "HashCode": -2110305121,
         "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.Registration",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.ChatPage",
         "AssemblyName": "Chat-Reenbet-brazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Registration"
+            "TagName": "ChatPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "chatId",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "chatId"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Registration"
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.ChatPage"
         }
       },
       {
-        "HashCode": 567965226,
+        "HashCode": 1166208283,
         "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.Registration",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.ChatPage",
         "AssemblyName": "Chat-Reenbet-brazor.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Chat_Reenbet_brazor.Client.Pages.Registration"
+            "TagName": "Chat_Reenbet_brazor.Client.Pages.ChatPage"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "chatId",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "chatId"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Registration",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.ChatPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 722085460,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.Login",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Login"
+        }
+      },
+      {
+        "HashCode": 2105275409,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.Login",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Chat_Reenbet_brazor.Client.Pages.Login"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Login",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

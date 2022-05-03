@@ -1,6 +1,9 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Chat_Reenbet_brazor.Models;
+using Microsoft.AspNetCore.SignalR.Client;
+
 
 namespace Chat_Reenbet_brazor.Client.Services
 {
@@ -16,5 +19,7 @@ namespace Chat_Reenbet_brazor.Client.Services
         public Task<User> GetUserbyLogin(string login);
         public Task CreateChat(Chat chat);
         public Task<List<ChatNav>> GetAllUserChats(string login);
+        public Task JoinRoom(string connectionId, Guid chat);
+        public Task<Chat> GetChatById(Guid id);
     }
 }

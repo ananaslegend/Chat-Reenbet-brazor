@@ -216,15 +216,15 @@
       "mscorlib.dll": "sha256-0qsbc1acYr3S6P7t9gSYyghOhMVs3CTJ9ukQ1VXqksY=",
       "netstandard.dll": "sha256-4Ejn1oHpeqmTQlJx7Kjuipn0ZVOoG0hGncN+9qyL1lo=",
       "System.Private.CoreLib.dll": "sha256-7n\/jioZu+\/2tD7v1RgjTTrBrviX+kVwPFGJ\/JBsHQGA=",
-      "Chat-Reenbet-brazor.Models.dll": "sha256-5+PdjPY1uzKkmPj9JFDsB0tTUpSlUcHzHndxAcL+m34=",
-      "Chat-Reenbet-brazor.Client.dll": "sha256-SDSz8D24+gCAlHd03pb0rvVlUFWNYolcMO45o6fpza4="
+      "Chat-Reenbet-brazor.Models.dll": "sha256-vhKGxwFHPTBts45xsZIghY8jEidCJh7HG5zEq7grVoo=",
+      "Chat-Reenbet-brazor.Client.dll": "sha256-IUba9sMzFOxnsjki0sLzePmHFHAYDKe044Zh\/\/6epp4="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Chat-Reenbet-brazor.Models.pdb": "sha256-OZQ5vwJuUdRM\/FCaHpPmZHe\/ZvvQ7iwcoiUmkHjlhDE=",
-      "Chat-Reenbet-brazor.Client.pdb": "sha256-O44I7pVFwOhY3RBMNqfKIcHnMc4pqtOE33pPXlQ+IEA="
+      "Chat-Reenbet-brazor.Models.pdb": "sha256-qdfRZlHBXpGbLG4vhaQg+ONvcV8XYXv6GYQKaBzNqjM=",
+      "Chat-Reenbet-brazor.Client.pdb": "sha256-5FaXOM\/lqObvTRV7bJPAPjfOkpS+5CZB4Oh+W3yVFjY="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-Uv0JiOiPEvlGxygIhcdY8XYm\/Nt+zgVckKrqB2uih0w=",

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Chat_Reenbet_brazor.Models;
 using System.Net.Http;
 using System.Net.Http.Json;
+using Microsoft.AspNetCore.SignalR.Client;
 
 namespace Chat_Reenbet_brazor.Client.Services
 {
@@ -64,15 +65,22 @@ namespace Chat_Reenbet_brazor.Client.Services
         public async Task<List<ChatNav>> GetAllUserChats(string login)
         {
             List<ChatNav> result = await _httpClient.GetFromJsonAsync<List<ChatNav>>($"/api/Chat/GetAllUserChats/{login}");
-
-            foreach(var item in result)
-            {
-                System.Console.WriteLine(item);
-            }
             
-           return result;
+           return result;            
+        }
 
-            
+        public async Task JoinRoom(string connectionId, Guid chat)
+        {            
+            await _httpClient.GetFromJsonAsync<Object>($"api/Chat/JoinChat/{connectionId}/{chat}");
+
+            System.Console.WriteLine("Connected to room");
+        }
+
+        public async Task<Chat> GetChatById(Guid id)
+        {
+            var result = await _httpClient.GetFromJsonAsync<Chat>($"api/Chat/GetChatById/{id}");
+
+            return result;
         }
     }
 }

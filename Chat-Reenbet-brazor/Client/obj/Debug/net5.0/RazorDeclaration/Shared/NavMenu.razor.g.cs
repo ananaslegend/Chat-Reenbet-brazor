@@ -146,9 +146,10 @@ using Microsoft.AspNetCore.SignalR.Client;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 86 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Shared\NavMenu.razor"
+#line 82 "D:\Projects\Chat-Reenbet-brazor\Chat-Reenbet-brazor\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
+    private string userLogin;
     private List<ChatNav> userChats = new List<ChatNav>();
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
@@ -173,6 +174,9 @@ using Microsoft.AspNetCore.SignalR.Client;
 
         userChats = await chatService.GetAllUserChats(currentUser);
         System.Console.WriteLine("GotAllChats");
+
+        userLogin = await LocalStorage.GetItemAsStringAsync("user_login");
+        userLogin = userLogin.Trim('"');
     } 
 
 #line default
