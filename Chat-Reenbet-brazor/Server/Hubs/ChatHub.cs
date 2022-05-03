@@ -63,6 +63,21 @@ namespace Chat_Reenbet_brazor.Server.Hubs
             // await _dbUnit.CompleteAsync();
         }
 
+        public async Task EditMessage(Guid messageId, string data) 
+        {
+            var message = _dbUnit.Messages.Find(m => m.Id == messageId).FirstOrDefault();
+            message.Data = data;
+
+            await _dbUnit.CompleteAsync();
+        }
+
+        public async Task RemoveMessage(Guid messageId)
+        {
+            var message = _dbUnit.Messages.Find(m => m.Id == messageId).FirstOrDefault();
+            _dbUnit.Messages.Remove(message);
+            await _dbUnit.CompleteAsync();
+        }
+
         public async Task GetMassagePack(Guid chatId, int loaded, string hubConnection)
         {
             var pack = _dbUnit.Messages.GetMessagePack(chatId, loaded);

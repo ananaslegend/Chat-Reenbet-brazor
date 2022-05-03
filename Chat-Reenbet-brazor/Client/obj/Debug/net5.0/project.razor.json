@@ -107,39 +107,6 @@
         }
       },
       {
-        "HashCode": 1563056621,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.NewChat",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NewChat"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.NewChat"
-        }
-      },
-      {
-        "HashCode": 652423014,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Pages.NewChat",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Chat_Reenbet_brazor.Client.Pages.NewChat"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.NewChat",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 722085460,
         "Kind": "Components.Component",
         "Name": "Chat_Reenbet_brazor.Client.Pages.Login",
@@ -169,6 +136,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.Login",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1563056621,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.NewChat",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NewChat"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.NewChat"
+        }
+      },
+      {
+        "HashCode": 652423014,
+        "Kind": "Components.Component",
+        "Name": "Chat_Reenbet_brazor.Client.Pages.NewChat",
+        "AssemblyName": "Chat-Reenbet-brazor.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Chat_Reenbet_brazor.Client.Pages.NewChat"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.NewChat",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -222,59 +222,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Chat_Reenbet_brazor.Client.Pages.ChatPage",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1447181361,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt"
-        }
-      },
-      {
-        "HashCode": 618203830,
-        "Kind": "Components.Component",
-        "Name": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
-        "AssemblyName": "Chat-Reenbet-brazor.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Chat_Reenbet_brazor.Client.Shared.SurveyPrompt",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -15393,11 +15340,6 @@
     {
       "FilePath": "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Client\\Pages\\Login.razor",
       "TargetPath": "Pages\\Login.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Projects\\Chat-Reenbet-brazor\\Chat-Reenbet-brazor\\Client\\Shared\\SurveyPrompt.razor",
-      "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {

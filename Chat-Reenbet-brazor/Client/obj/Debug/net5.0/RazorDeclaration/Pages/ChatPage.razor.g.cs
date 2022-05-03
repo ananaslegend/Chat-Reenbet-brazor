@@ -167,12 +167,19 @@ using Microsoft.AspNetCore.SignalR.Client;
         author = author.Trim('"');
 
          await hubConnection.SendAsync("SendMessage", message, author, chatId); 
-        loaded += 1;        
+        loaded += 1;
     }
 
-    private async Task EditMessage()
+    private async Task RemoveMessage(Guid messageId)
     {
-        
+        await hubConnection.SendAsync("RemoveMessage", messageId); 
+        StateHasChanged();
+    }
+
+    private async Task EditMessage(Guid messageId)
+    {
+        await hubConnection.SendAsync("EditMessage", messageId, message); 
+        StateHasChanged();
     }
 
     private async Task LoadMore()

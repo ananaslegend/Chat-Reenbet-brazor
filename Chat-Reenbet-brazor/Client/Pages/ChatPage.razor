@@ -16,10 +16,10 @@ else
      @foreach (var msg in messages)
      {
         <div><p><span>@(msg.Author.Login)</span> at <span style="font-size: 90%;">@msg.Date.Hour</span>:<span style="font-size: 90%;">@msg.Date.Minute</span> &#9 <span style="font-size: 75%;
-">@msg.Date.ToShortDateString()</span><br><span>@(msg.Data)</span><button class="btn" @onclick="EditMessage">Edit</button><button class="btn" @onclick="() => ReplyMessage(msg.Id)">Reply</button></p>
+">@msg.Date.ToShortDateString()</span><br><span>@(msg.Data)</span><button class="btn" @onclick="() => EditMessage(msg.Id)">Edit</button><button class="btn" @onclick="() => RemoveMessage(msg.Id)">Remove</button><button class="btn" @onclick="() => ReplyMessage(msg.Id)">Reply</button></p>
     @if (msg.Reply != null)
     {
-        <p>Reply to </p>
+        <p style="font-size: 90%;">&#129045 Reply to <span>@(msg.Reply.Author.Login):</span><span>@(msg.Reply.Data)</span></p>
     }
         </div>
      }
@@ -56,12 +56,19 @@ else
         author = author.Trim('"');
 
          await hubConnection.SendAsync("SendMessage", message, author, chatId); 
-        loaded += 1;        
+        loaded += 1;
     }
 
-    private async Task EditMessage()
+    private async Task RemoveMessage(Guid messageId)
     {
-        
+        await hubConnection.SendAsync("RemoveMessage", messageId); 
+        StateHasChanged();
+    }
+
+    private async Task EditMessage(Guid messageId)
+    {
+        await hubConnection.SendAsync("EditMessage", messageId, message); 
+        StateHasChanged();
     }
 
     private async Task LoadMore()
